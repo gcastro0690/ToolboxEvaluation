@@ -1,0 +1,35 @@
+{
+  "name": "stadium-crush-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "http://tfs.xseed.com.uy:8099/tfs/DefaultCollection/_git/StadiumCrushBackend",
+  "author": "Federico Sobral <fsobral@xseed.com.uy>",
+  "license": "MIT",
+  "scripts": {
+    "start-back": "cd backend && yarn start && cd ..",
+    "install-back": "cd backend && yarn install && cd ..",
+    "start-server": "set NODE_ENV=development && nodemon --inspect index.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn start-server\" \"yarn start-back\""
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "config": "^1.30.0",
+    "connect-mssql": "^1.5.0",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.2",
+    "express-session": "^1.15.6",
+    "joi": "^13.4.0",
+    "mssql": "^4.1.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0",
+    "concurrently": "^3.6.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier": "^1.13.7"
+  }
+}

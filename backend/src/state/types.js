@@ -1,0 +1,7 @@
+const SET_STRING = 'PING/SET_STRING';
+const SET_STRING_FAIL = 'PING/SET_STRING/FAIL';
+
+export default {
+  SET_STRING,
+  SET_STRING_FAIL,
+};
