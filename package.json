@@ -21,6 +21,7 @@
     "express-promise-router": "^3.0.2",
     "express-session": "^1.15.6",
     "joi": "^13.4.0",
+    "mocha": "^5.2.0",
     "mssql": "^4.1.0",
     "nodemon": "^1.18.3",
     "react-router-dom": "^4.3.1"
