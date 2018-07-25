@@ -1,6 +1,6 @@
 module.exports = {
   ping: async (req, res) => {
-    debugger;
-    res.status(200).json('data');
+    let string = req.body.params.string;
+    res.status(200).json(string);
   },
 };

@@ -17,19 +17,27 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Toolbox Evaluation!</h1>
         </header>
-        <TextField
-          id="txtString"
-          label="String"
-          onChange={this.handleChange('string')}
-          margin="normal"
-        />
-        <TextField
-          id="txtString"
-          label="String Return"
-          value={this.props.string}
-          onChange={this.handleChange('string')}
-          margin="normal"
-        />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-sm">
+              <TextField
+                id="txtString"
+                label="String"
+                onChange={this.handleChange('string')}
+                margin="normal"
+              />
+            </div>
+            <div className="col-sm">
+              <TextField
+                id="txtString"
+                label="String Return"
+                value={this.props.string}
+                onChange={this.handleChange('string')}
+                margin="normal"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

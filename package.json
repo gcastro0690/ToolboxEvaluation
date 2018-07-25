@@ -1,15 +1,14 @@
 {
-  "name": "stadium-crush-server",
+  "name": "toolbox-evaluation-server",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "http://tfs.xseed.com.uy:8099/tfs/DefaultCollection/_git/StadiumCrushBackend",
-  "author": "Federico Sobral <fsobral@xseed.com.uy>",
+  "repository": "https://github.com/gcastro0690/ToolboxEvaluation",
+  "author": "Gonzalo Castro <gcastro0690@gmail.com.uy>",
   "license": "MIT",
   "scripts": {
-    "start-back": "cd backend && yarn start && cd ..",
-    "install-back": "cd backend && yarn install && cd ..",
+    "start-front": "cd front && yarn start && cd ..",
     "start-server": "set NODE_ENV=development && nodemon --inspect index.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn start-server\" \"yarn start-back\""
+    "dev": "concurrently --kill-others-on-fail \"yarn start-server\" \"yarn start-front\""
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -23,6 +22,7 @@
     "express-session": "^1.15.6",
     "joi": "^13.4.0",
     "mssql": "^4.1.0",
+    "nodemon": "^1.18.3",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {

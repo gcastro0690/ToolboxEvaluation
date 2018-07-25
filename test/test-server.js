@@ -8,12 +8,12 @@ chai.use(chaiHttp);
 
 describe('Strings', function() {
     it('should retorn same string', function(done) {
-        chai.request(server)
+        chai.request("http://localhost:3001")
         .post('/api/ping')
-        .send({'string': 'Java'})
+        .send({'params':{'string': 'Toolbox'}})
         .end(function(err, res){
-          res.should.have.status(200);
-          
+          res.should.have.status(200);    
+          res.body.should.equal('Toolbox');     
           done();
         });
       });
